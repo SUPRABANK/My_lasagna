@@ -1,0 +1,33 @@
+{
+  "name": "ร้านลาซานญ่า — คิดยอด & เช็คสต๊อก",
+  "short_name": "ลาซานญ่า",
+  "description": "แอปคิดยอดขายและเช็คสต๊อกสำหรับร้านอาหาร (ลาซานญ่า/พาสต้า)",
+  "lang": "th",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf4ec",
+  "theme_color": "#d84a2b",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

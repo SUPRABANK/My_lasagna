@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#d84a2b" />
+  <meta name="description" content="แอปขายและเช็คสต๊อกสำหรับร้านอาหาร" />
+  <title>ร้านลาซานญ่า — คิดยอด & เช็คสต๊อก</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ LOGIN ============ -->
+  <div id="loginView" class="login-view">
+    <div class="login-card">
+      <img id="loginLogo" class="login-logo" src="icons/icon-192.png" alt="logo" />
+      <h1 id="loginShopName" class="login-title">ร้านลาซานญ่า</h1>
+      <p class="login-sub">เลือกตำแหน่งของคุณเพื่อเข้าใช้งาน</p>
+
+      <div id="roleList" class="role-list"></div>
+
+      <div id="staffPanel" class="hidden">
+        <div class="staff-panel-head">เลือกพนักงานขาย</div>
+        <div id="staffList" class="role-list"></div>
+        <button id="staffCancel" class="btn btn-ghost pin-cancel">เปลี่ยนตำแหน่ง</button>
+      </div>
+
+      <div id="pinPanel" class="pin-panel hidden">
+        <div class="pin-role-label" id="pinRoleLabel"></div>
+        <div class="pin-dots" id="pinDots"></div>
+        <div class="keypad" id="keypad"></div>
+        <button class="btn btn-ghost pin-cancel" id="pinCancel">เปลี่ยนตำแหน่ง</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ APP SHELL ============ -->
+  <div id="appView" class="app hidden">
+    <header class="app-header">
+      <div class="app-header-left">
+        <img src="icons/icon-192.png" class="header-logo" alt="" />
+        <div>
+          <div id="headerShopName" class="header-shop">ร้านลาซานญ่า</div>
+          <div id="headerRole" class="header-role"></div>
+        </div>
+      </div>
+      <button id="logoutBtn" class="btn btn-ghost btn-logout" title="ออกจากระบบ">ออก</button>
+    </header>
+
+    <main id="main" class="main">
+      <section id="view-dashboard" class="view"></section>
+      <section id="view-stock" class="view"></section>
+      <section id="view-jobs" class="view"></section>
+      <section id="view-myshop" class="view"></section>
+      <section id="view-history" class="view"></section>
+      <section id="view-settings" class="view"></section>
+    </main>
+
+    <nav id="bottomNav" class="bottom-nav"></nav>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- ============ MODAL ============ -->
+  <div id="modalBackdrop" class="modal-backdrop hidden">
+    <div class="modal" id="modalBox"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
